@@ -5,6 +5,11 @@ import 'app_textstyles.dart';
 
 class Apptheme{
   static ThemeData darktheme=ThemeData(
+    appBarTheme:AppBarTheme(
+      centerTitle:true,
+      backgroundColor: Appcolors.Black,
+      foregroundColor:Appcolors.Primary,
+    ),
     scaffoldBackgroundColor: Appcolors.transparent,
     bottomNavigationBarTheme:BottomNavigationBarThemeData(
       selectedItemColor: Appcolors.white,

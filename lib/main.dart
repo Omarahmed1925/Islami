@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:islami/core/app-theme.dart';
 import 'package:islami/pages/HomePage.dart';
 import 'package:islami/pages/OnBoarding/Onboarding.dart';
+import 'package:islami/pages/SuraDetails/SuraDetailsScreen.dart';
+import 'package:islami/pages/suradetails2/SuraDetailsScreen2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +23,8 @@ class MyApp extends StatelessWidget {
       routes: {
       Onboarding.routeName: (context) => Onboarding(),
         Homepage.routeName: (context) => Homepage(),
+        Suradetailsscreen.routeName: (context) => Suradetailsscreen(),
+        Suradetailsscreen2.routeName: (context) => Suradetailsscreen2(),
       },
     );
   }

@@ -154,6 +154,12 @@ class Onboarding extends StatelessWidget {
           overlayColor: Appcolors.transparent,
         ),
         controlsMargin:EdgeInsets.symmetric(horizontal:3),
+        showSkipButton:true,
+        skip: Text("Skip",style: TextStyle(color: Appcolors.Primary,fontSize:20),),
+        skipStyle: TextButton.styleFrom(
+          alignment: Alignment.bottomLeft,
+          overlayColor: Appcolors.transparent,
+        ),
         bodyPadding: EdgeInsets.all(20),
 
 

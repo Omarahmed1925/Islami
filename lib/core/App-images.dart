@@ -17,4 +17,7 @@ class Appimages{
   static const String  duaa= 'assets/images/duaa.png';
   static const String  SuraCardImage= 'assets/images/SuraCardImage.png';
   static const String  SuraNoContainer= 'assets/images/SuraNoContainer.png';
+  static const String  TopLeft= 'assets/images/topleft.png';
+  static const String  Topright= 'assets/images/topRight.png';
+  static const String  bottomMosque= 'assets/images/bottomMosqua.png';
 }
