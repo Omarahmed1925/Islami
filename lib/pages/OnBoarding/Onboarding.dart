@@ -13,7 +13,7 @@ class Onboarding extends StatelessWidget {
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
-   List<PageViewModel> pages = [
+    List<PageViewModel> pages = [
       PageViewModel(
         titleWidget: Image.asset(Appimages.islamiIcon),
         bodyWidget:Column(
@@ -36,7 +36,7 @@ class Onboarding extends StatelessWidget {
             Image.asset(Appimages.Kaaba),
             SizedBox(height: height*0.05,),
             Text("Welcome To Islami",
-                style:AppTextStyles.bold24primary,),
+              style:AppTextStyles.bold24primary,),
             SizedBox(height:height*0.05,),
             Text("We are very excited to have you in our community",
                 style:AppTextStyles.bold20primary
@@ -123,12 +123,12 @@ class Onboarding extends StatelessWidget {
     return Scaffold(
       body:IntroductionScreen(
         dotsDecorator:DotsDecorator(
-          color: Appcolors.Grey,
-          activeColor: Appcolors.Primary,
+            color: Appcolors.Grey,
+            activeColor: Appcolors.Primary,
             activeSize: const Size(22.0, 10.0),
-          activeShape:RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(24),
-          )
+            activeShape:RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(24),
+            )
         ),
         done:Text("Finish",style: TextStyle(color: Appcolors.Primary,fontSize:20),),
         controlsPadding: EdgeInsets.all(10),

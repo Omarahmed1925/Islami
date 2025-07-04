@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:islami/Providers/most_recent_provider.dart';
 import 'package:islami/core/App-images.dart';
 import 'package:islami/core/app-colors.dart';
 import 'package:islami/core/app_textstyles.dart';
@@ -7,6 +8,7 @@ import 'package:islami/pages/SuraDetails/SuraDetailsScreen.dart';
 import 'package:islami/pages/SuraDetails/SuraItem.dart';
 import 'package:islami/pages/Tabs/Quran/QuranResources.dart';
 import 'package:islami/pages/suradetails2/SuraItem2.dart';
+import 'package:provider/provider.dart';
 
 class Suradetailsscreen2 extends StatefulWidget {
   static const String routeName = '/SuraDetails2';
@@ -18,13 +20,24 @@ class Suradetailsscreen2 extends StatefulWidget {
 }
 
 class _Suradetailsscreen2State extends State<Suradetailsscreen2> {
+  late MostRecentProvider mostRecentProvider;
  String Sura='';
-
+ @override
+  void dispose() {
+    super.dispose();
+    // TODO: implement dispose
+    WidgetsBinding.instance.addPostFrameCallback(
+      (timeStamp) {
+      mostRecentProvider.getSavedSuraList();
+      },
+    );
+ }
   @override
   Widget build(BuildContext context) {
     var w = MediaQuery.of(context).size.width;
     var h = MediaQuery.of(context).size.height;
     int index=ModalRoute.of(context)?.settings.arguments as int;
+    mostRecentProvider=Provider.of<MostRecentProvider>(context);
     if(Sura.isEmpty){
       loadfilecontent(index);
     }

@@ -20,4 +20,5 @@ class Appimages{
   static const String  TopLeft= 'assets/images/topleft.png';
   static const String  Topright= 'assets/images/topRight.png';
   static const String  bottomMosque= 'assets/images/bottomMosqua.png';
+  static const String  rotatingSebha= 'assets/images/RotatingSebha.png';
 }

@@ -19,6 +19,11 @@ static TextStyle bold20white= TextStyle(
   fontWeight: FontWeight.bold,
   color: Appcolors.white,
   );
+static TextStyle bold36white= TextStyle(
+  fontSize: 36,
+  fontWeight: FontWeight.bold,
+  color: Appcolors.white,
+  );
 static TextStyle bold16white=GoogleFonts.elMessiri(
 fontSize: 16,
 fontWeight: FontWeight.bold,
