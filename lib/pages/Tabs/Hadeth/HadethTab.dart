@@ -14,7 +14,6 @@ class HadethTab extends StatelessWidget {
       padding:EdgeInsets.only(bottom:height*0.02),
       child: CarouselSlider(
         options: CarouselOptions(height: height*0.66,enlargeCenterPage:true),
-
         items: List.generate(50,(index) =>index+1,).map((i) {
           return Builder(
             builder: (BuildContext context) {

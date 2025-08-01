@@ -1,3 +1,5 @@
+import 'package:flutter/services.dart';
+
 class Hadeeth{
   String title;
   String content;

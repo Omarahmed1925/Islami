@@ -40,8 +40,7 @@ class _HadeethcontainerState extends State<Hadeethcontainer> {
               Image.asset(Appimages.toprightcornerH),
             ],
           ),
-          Expanded(child: SingleChildScrollView(child: Text(widget.hadeeth1?.content??"",style:AppTextStyles.bold20Black,))),
-          Image.asset(Appimages.bottomRadioMosque)
+          Expanded(child: SingleChildScrollView(child: Text(widget.hadeeth1?.content??"",style:AppTextStyles.bold20Black,)))
         ],
       ),
     );
@@ -51,7 +50,6 @@ class _HadeethcontainerState extends State<Hadeethcontainer> {
     String title = filecontent.substring(0,filecontent.indexOf('\n'));
     String content = filecontent.substring(filecontent.indexOf('\n')+1);
     widget.hadeeth1=Hadeeth(title: title, content: content);
-    await Future.delayed(Duration(seconds:2));
     setState(() {
       
     });
