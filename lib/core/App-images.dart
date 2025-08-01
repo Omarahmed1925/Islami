@@ -1,0 +1,29 @@
+class Appimages{
+  static const String islamiIcon = 'assets/images/IslamiIcon.png';
+  static const String QuranPG = 'assets/images/bgquran.png';
+  static const String quranicon = 'assets/images/quran.png';
+  static const String Radioicon = 'assets/images/Radio.png';
+  static const String sebhaicon = 'assets/images/sebha.png';
+  static const String Timericon = 'assets/images/Timer.png';
+  static const String Hadithicon = 'assets/images/Hadith.png';
+  static const String HadethBg = 'assets/images/HadethBg.png';
+  static const String sebhaBg = 'assets/images/sebhabg.png';
+  static const String radioBg = 'assets/images/radiobg.png';
+  static const String timerbg = 'assets/images/timerbg.png';
+  static const String welcomeFrame = 'assets/images/WelcomeFrame.png';
+  static const String Kaaba = 'assets/images/kaaba.png';
+  static const String mic = 'assets/images/mic.png';
+  static const String MosqueXquran = 'assets/images/MosqueXquran-1.png';
+  static const String  duaa= 'assets/images/duaa.png';
+  static const String  SuraCardImage= 'assets/images/SuraCardImage.png';
+  static const String  SuraNoContainer= 'assets/images/SuraNoContainer.png';
+  static const String  TopLeft= 'assets/images/topleft.png';
+  static const String  Topright= 'assets/images/topRight.png';
+  static const String  bottomMosque= 'assets/images/bottomMosqua.png';
+  static const String  rotatingSebha= 'assets/images/RotatingSebha.png';
+  static const String  bottomRadioMosque= 'assets/images/Mosque-02.png';
+  static const String  soundWave= 'assets/images/SoundWave.png';
+  static const String  hadeethBackgroundImage= 'assets/images/HadithCardBackGround 1.png';
+  static const String  toprightcornerH= 'assets/images/topRightCornerH.png';
+  static const String  topleftcornerH= 'assets/images/topLeftCornerH.png';
+}
